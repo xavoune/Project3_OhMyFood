@@ -144,6 +144,26 @@ table {
 
 /* Font */
 /* Colors */
+.location {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  background-color: #f6f6f6;
+}
+.location .location_dot {
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.location .search_location {
+  font-family: "Roboto";
+  color: black;
+  background-color: #f6f6f6;
+  border: none;
+}
+
 header {
   position: sticky;
   width: 100%;
