@@ -5,9 +5,7 @@
     height: 300px;
     padding: 45px;
     background-color: $light-grey-1 ;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    @include CenterColumn;
 
     &__title {
         font-family: $font-text;
