@@ -176,4 +176,25 @@ header {
   justify-content: center;
 }
 
+.explorer {
+  width: 100%;
+  height: 300px;
+  padding: 45px;
+  background-color: #eaeaea;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.explorer__title {
+  font-family: "Roboto";
+  font-size: 27px;
+  text-align: center;
+  font-weight: 600;
+}
+.explorer__text {
+  font-family: "Roboto";
+  font-size: 18px;
+  text-align: center;
+}
+
 /*# sourceMappingURL=style.css.map */
