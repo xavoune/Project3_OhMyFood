@@ -164,6 +164,13 @@ table {
   border: none;
 }
 
+.explorer__button {
+  font-family: "Roboto";
+  width: 200px;
+  height: 45px;
+  border-radius: 25px;
+}
+
 header {
   position: sticky;
   width: 100%;
@@ -184,6 +191,7 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
 }
 .explorer__title {
   font-family: "Roboto";
