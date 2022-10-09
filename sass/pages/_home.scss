@@ -1,5 +1,7 @@
 @use '../utils/' as *;
 
+/* Explorer part */
+
 .explorer {
     width: 100%;
     height: 300px;
@@ -19,5 +21,17 @@
         font-size: 18px;
         text-align: center;
 
+    }
+}
+
+/* Functioning part */
+
+.functioning {
+    padding: 40px 20px;
+
+    &__title {
+        font-family: $font-text;
+        font-size: 22px;
+        font-weight: 700;
     }
 }
