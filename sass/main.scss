@@ -1,4 +1,15 @@
-@use 'base';
-@use 'components';
-@use 'layout';
-@use 'pages';
+@import './utils/variables';
+@import './utils/mixins';
+
+@import './base/font';
+@import './base/reset';
+
+@import './components/box&cards';
+@import './components/button';
+@import './components/forms';
+
+@import './layout/header';
+@import './layout/footer';
+
+@import './pages/home';
+@import './pages/menus';
