@@ -2,14 +2,13 @@
 @import './utils/mixins';
 
 @import './base/font';
-@import './base/reset';
 
-@import './components/box&cards';
+@import './components/box_and_cards';
 @import './components/button';
 @import './components/forms';
 
 @import './layout/header';
 @import './layout/footer';
 
-@import './pages/home';
+@import './pages/index';
 @import './pages/menus';

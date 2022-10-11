@@ -3,17 +3,19 @@
     height: 50px;
     display: flex;
     justify-content: center;
-    background-color: $light-grey;
+    background-color: $background-color-secondary;
 
-    .location_dot {
+    &__dot {
         padding: 15px;
         @include CenterPosition
     }
 
-    .search_location {
+    &__search {
+        width: 150px;
         font-family: $font-text;
+        font-size: large;
         color: black;
-        background-color: $light-grey;
+        background-color: $background-color-secondary;
         border: none;
 
     }

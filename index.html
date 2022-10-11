@@ -6,23 +6,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/1b30f847b3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <title>OhMyFood</title>
 </head>
 
 <body>
     <header>
-        <div class="logo_menu">
-            <a href="home.html">
-                <img src="images/logo/ohmyfood_mini.png" alt="logo ohmyfood">
-            </a>
-        </div>
+        <a href="index.html">
+            <img src="images/logo/ohmyfood_mini.png" alt="logo ohmyfood">
+        </a>
     </header>
 
 
     <form method="post" action="#" class="location">
-        <div class="location_dot"><i class="fa-solid fa-location-dot"></i></div>
-        <input id="search_location" class="search_location" type="search" placeholder="Paris, Belville" />
+        <div class="location__dot"><i class="fa-solid fa-location-dot fa-lg"></i></div>
+        <input id="location__search" class="location__search" type="search" placeholder="Paris, Belleville" />
     </form>
 
     <section class="explorer">
@@ -57,31 +56,108 @@
     </section>
 
     <section class="restaurants">
-        <h1>Restaurants</h1>
+        <h1 class="restaurants__title">Restaurants</h1>
 
-        <article class="restaurants__cards">
+        <div class="restaurants__cards">
 
-            <a href="menu_la_palette_du_goût.html">
+            <article class="cards">
 
-                <div class="cards__image">
-                    <!--<img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La palette du goût">-->
-                </div>
+                <a href="menu_la_palette_du_gout.html">
 
-                <div class="cards__body">
-
-                    <div class="cards__body__text">
-                        <h2>La palette du goût</h2>
-                        <p>Ménilmontant</p>
+                    <div class="cards__image">
+                        <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La palette du goût">
                     </div>
 
-                    <div class="cards_body_heart">
-                        <i class="fa-thin fa-heart"></i>
+                    <div class="cards__body">
+
+                        <div class="cards__body__text">
+                            <h2>La palette du goût</h2>
+                            <p>Ménilmontant</p>
+                        </div>
+
+                        <div class="cards__body__heart">
+                            <i class="fa-regular fa-heart fa-2xl"></i>
+                        </div>
+
                     </div>
 
-                </div>
+                </a>
+            </article>
 
-            </a>
-        </article>
+            <article class="cards">
+
+                <a href="menu_la_note_enchantee.html">
+
+                    <div class="cards__image">
+                        <img src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="La note enchantée">
+                    </div>
+
+                    <div class="cards__body">
+
+                        <div class="cards__body__text">
+                            <h2>La note enchantée</h2>
+                            <p>Charonne</p>
+                        </div>
+
+                        <div class="cards__body__heart">
+                            <i class="fa-regular fa-heart fa-2xl"></i>
+                        </div>
+
+                    </div>
+
+                </a>
+            </article>
+
+            <article class="cards">
+
+                <a href="menu_a_la_française.html">
+
+                    <div class="cards__image">
+                        <img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="A la française">
+                    </div>
+
+                    <div class="cards__body">
+
+                        <div class="cards__body__text">
+                            <h2>A la française</h2>
+                            <p>Cité Rouge</p>
+                        </div>
+
+                        <div class="cards__body__heart">
+                            <i class="fa-regular fa-heart fa-2xl"></i>
+                        </div>
+
+                    </div>
+
+                </a>
+            </article>
+
+            <article class="cards">
+
+                <a href="menu_le_delice_des_sens.html">
+
+                    <div class="cards__image">
+                        <img src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Le délice des sens">
+                    </div>
+
+                    <div class="cards__body">
+
+                        <div class="cards__body__text">
+                            <h2>Le délice des sens</h2>
+                            <p>Folie-Méricourt</p>
+                        </div>
+
+                        <div class="cards__body__heart">
+                            <i class="fa-regular fa-heart fa-2xl"></i>
+                        </div>
+
+                    </div>
+
+                </a>
+            </article>
+
+
+        </div>
     </section>
 </body>
 

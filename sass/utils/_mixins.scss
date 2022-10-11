@@ -13,13 +13,3 @@
     align-items: center;
 
 }
-
-/* Button */
-
-@mixin Button ($width, $height, $font, $border, $border-radius) {
-    width: $width;
-    height: $height;
-    font-family: $font;
-    border: $border;
-    border-radius: $border-radius;
-}
