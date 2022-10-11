@@ -35,6 +35,10 @@
         font-size: 22px;
         font-weight: 700;
     }
+
+    &__list {
+        @include CenterColumn
+    }
 }
 
 /* Restaurant part */
