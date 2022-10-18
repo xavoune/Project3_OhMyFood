@@ -1,18 +1,258 @@
-/* Error: Expected expression.
- *   ,
- * 8 |     box-shadow: ;
- *   |                 ^
- *   '
- *   components\_box_and_cards.scss 8:17  @import
- *   main.scss 6:9                        root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Expected expression.\a   \2577 \a 8 \2502      box-shadow: ;\d\a   \2502                  ^\a   \2575 \a   components\\_box_and_cards.scss 8:17  @import\a   main.scss 6:9                        root stylesheet";
+/* Font */
+/* Colors */
+/* Flex */ /* FONT FAMILY */
+/* Shrikhand (for logos and titles) */
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+/* Roboto (for texts) */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+/* box for functioning */
+.functioning__list__box {
+  width: 330px;
+  height: 70px;
+  background-color: #f6f6f6;
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px #eaeaea;
+  position: relative;
+  display: flex;
+  align-items: center;
 }
+.functioning__list__box p {
+  font-weight: bold;
+}
+
+.functioning__icon {
+  color: grey;
+  padding: 20px 30px;
+}
+
+.list__number {
+  width: 20px;
+  height: 20px;
+  background-color: #9356DC;
+  color: white;
+  border-radius: 10px;
+  position: absolute;
+  left: -10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* cards in index page */
+.cards {
+  width: 100%;
+  height: 250px;
+  box-shadow: 2px 2px 10px #f6f6f6;
+  border-radius: 15px;
+  position: relative;
+}
+.cards a {
+  width: 100%;
+  color: black;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+}
+.cards__box {
+  width: 100px;
+  height: 30px;
+  position: absolute;
+  top: 10px;
+  left: 220px;
+  font-family: "Roboto";
+  font-weight: bold;
+  color: #278870;
+  background-color: #99E2D0;
+  border-radius: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cards__image {
+  width: 100%;
+  height: 170px;
+}
+.cards__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px 15px 0px 0px;
+}
+.cards__body {
+  width: 100%;
+  height: 80px;
+  padding: 15px;
+  border-radius: 0px 0px 15px 15px;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+}
+.cards__body__text {
+  font-family: "Roboto";
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.cards__body h2 {
+  margin: 0px;
+  font-size: 20px;
+}
+.cards__body p {
+  margin: 0px;
+  font-size: 18px;
+}
+.cards__body__heart {
+  display: flex;
+  align-items: center;
+}
+.cards .fa-2xl {
+  line-height: normal;
+}
+
+.explorer__button {
+  font-family: "Roboto";
+  color: white;
+  width: 250px;
+  height: 60px;
+  border-radius: 30px;
+  box-shadow: 5px 5px 5px #eaeaea;
+  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  border: none;
+}
+
+.cards__body__heart .fa-heart--full {
+  background: linear-gradient(to top right, #FF79DA, #9356DC);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.location {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  background-color: #eaeaea;
+}
+.location__dot {
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.location__search {
+  width: 150px;
+  font-family: "Roboto";
+  font-size: large;
+  color: black;
+  background-color: #eaeaea;
+  border: none;
+}
+
+header {
+  position: sticky;
+  width: 100%;
+  box-shadow: 0px 2px 10px grey;
+  padding: 25px 0px 10px 0px;
+  display: flex;
+  justify-content: center;
+}
+
+footer {
+  width: 100%;
+  height: 150px;
+  padding: 20px;
+  background-color: #353535;
+  color: white;
+}
+footer h1 {
+  margin: 0px;
+  margin-bottom: 10px;
+  font-family: "Shrikhand";
+  font-size: 15px;
+  font-weight: lighter;
+}
+footer ul {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Roboto";
+  font-size: 13px;
+  list-style-type: none;
+}
+footer ul li {
+  margin-bottom: 5px;
+}
+footer .footer__icon {
+  margin-right: 10px;
+}
+footer .fa-sm {
+  line-height: normal;
+}
+footer .fa-2xs {
+  line-height: normal;
+}
+
+/* Explorer part */
+.explorer {
+  width: 100%;
+  height: 300px;
+  padding: 40px;
+  background-color: #f6f6f6;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.explorer__title {
+  margin: 0px;
+  padding: 0px 20px;
+  font-family: "Roboto";
+  font-size: 26px;
+  text-align: center;
+  font-weight: 600;
+}
+.explorer__text {
+  margin: 0px;
+  font-family: "Roboto";
+  font-size: 17px;
+  text-align: center;
+}
+
+/* Functioning part */
+.functioning {
+  padding: 40px 20px;
+}
+.functioning__title {
+  font-family: "Roboto";
+  font-size: 22px;
+  font-weight: 700;
+}
+.functioning__list {
+  height: 240px;
+  font-family: "Roboto";
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Restaurant part */
+.restaurants {
+  width: 100%;
+  background-color: #f6f6f6;
+  padding: 50px 20px;
+}
+.restaurants__title {
+  font-family: "Roboto";
+  margin: 0px;
+}
+.restaurants__cards {
+  height: 1200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: space-around;
+}
+
+/*# sourceMappingURL=style.css.map */

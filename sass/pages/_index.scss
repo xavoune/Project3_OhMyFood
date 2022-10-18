@@ -11,7 +11,7 @@
         margin: 0px;
         padding: 0px 20px;
         font-family: $font-text;
-        font-size: 27px;
+        font-size: 26px;
         text-align: center;
         font-weight: 600;
     }
@@ -19,7 +19,7 @@
     &__text {
         margin: 0px;
         font-family: $font-text;
-        font-size: 19px;
+        font-size: 17px;
         text-align: center;
 
     }
@@ -37,6 +37,8 @@
     }
 
     &__list {
+        height: 240px;
+        font-family: $font-text;
         @include CenterColumn
     }
 }

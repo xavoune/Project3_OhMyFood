@@ -1,6 +1,22 @@
 .explorer__button {
     font-family: $font-text;
+    color: white;
     width: 250px;
     height: 60px;
     border-radius: 30px;
+    box-shadow: 5px 5px 5px $background-color-secondary;
+    background: linear-gradient(to bottom right, $color-secondary, $color-primary);
+    border: none;
+}
+
+.cards__body__heart {
+
+    .fa-heart {
+        &--full {
+            background: linear-gradient(to top right, $color-secondary, $color-primary);
+            background-clip: border-box;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
 }
