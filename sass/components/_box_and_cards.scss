@@ -13,11 +13,20 @@
     p {
         font-weight: bold;
     }
+
+    &:hover {
+        background-color: lighten($color-primary , 30%);
+
+        .functioning__icon {
+            color: $color-primary;
+        }
+    }
 }
 
 .functioning__icon {
     color: grey;
     padding: 20px 30px;
+
 }
 
 .list__number {
@@ -54,7 +63,7 @@
         height: 30px;
         position: absolute;
         top: 10px;
-        left: 220px;
+        right: 10px;
         font-family: $font-text;
         font-weight: bold;
         color: darken($color-tertiary, 40%);
@@ -107,8 +116,10 @@
             align-items: center;
         }
     }
+}
 
-    .fa-2xl {
-        line-height: normal;
-    }
+/* Correction for Font Awersome icons */
+
+.fa {
+    line-height: normal;
 }

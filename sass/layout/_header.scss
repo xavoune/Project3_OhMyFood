@@ -1,3 +1,5 @@
+/* Header in index page */
+
 .header__index {
     position: sticky;
     width: 100%;
@@ -6,6 +8,8 @@
     display: flex;
     justify-content: center;
 }
+
+/* Header in menu pages */
 
 .header__menu {
     width: 100%;
@@ -22,5 +26,5 @@
 .fa-arrow-left {
     position: absolute;
     left: 20px;
-    top: 40px;
+    top: 25px;
 }

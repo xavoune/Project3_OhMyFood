@@ -1,3 +1,5 @@
+/* Button for explorer section */
+
 .explorer__button {
     font-family: $font-text;
     color: white;
@@ -7,19 +9,80 @@
     box-shadow: 5px 5px 5px $background-color-secondary;
     background: linear-gradient(to bottom right, $color-secondary, $color-primary);
     border: none;
+
 }
+
+/* Heart icon in index page */
 
 .cards__body__heart {
 
     .fa-heart {
+
+        position: absolute;
+        right: 15px;
+
+        &--empty {
+            opacity: 1;
+            transition: opacity 400ms;
+
+            &:hover {
+                opacity: 0;
+                transition: opacity 400ms;
+            }
+        }
+
         &--full {
             background: linear-gradient(to top right, $color-secondary, $color-primary);
             background-clip: border-box;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
+            opacity: 0;
+            transition: opacity 400ms;
+
+            &:hover {
+                opacity: 1;
+                transition: opacity 400ms;
+            }
         }
     }
 }
+
+/* Heart icon in menu pages */
+
+.menu__title__heart {
+
+    .fa-heart {
+        position: absolute;
+        right: 40px;
+        bottom: 35px;
+
+        &--empty {
+            opacity: 1;
+            transition: opacity 400ms;
+
+            &:hover {
+                opacity: 0;
+                transition: opacity 400ms;
+            }
+        }
+
+        &--full {
+            background: linear-gradient(to top right, $color-secondary, $color-primary);
+            background-clip: border-box;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            opacity: 0;
+            transition: opacity 400ms;
+
+            &:hover {
+                opacity: 1;
+                transition: opacity 400ms;
+            }
+        }
+    }
+}
+
+/* Button order in menu pages */
 
 .order__button {
     font-family: $font-text;

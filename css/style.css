@@ -19,6 +19,12 @@
 .functioning__list__box p {
   font-weight: bold;
 }
+.functioning__list__box:hover {
+  background-color: #e4d5f6;
+}
+.functioning__list__box:hover .functioning__icon {
+  color: #9356DC;
+}
 
 .functioning__icon {
   color: grey;
@@ -58,7 +64,7 @@
   height: 30px;
   position: absolute;
   top: 10px;
-  left: 220px;
+  right: 10px;
   font-family: "Roboto";
   font-weight: bold;
   color: #278870;
@@ -105,10 +111,13 @@
   display: flex;
   align-items: center;
 }
-.cards .fa-2xl {
+
+/* Correction for Font Awersome icons */
+.fa {
   line-height: normal;
 }
 
+/* Button for explorer section */
 .explorer__button {
   font-family: "Roboto";
   color: white;
@@ -120,13 +129,60 @@
   border: none;
 }
 
+/* Heart icon in index page */
+.cards__body__heart .fa-heart {
+  position: absolute;
+  right: 15px;
+}
+.cards__body__heart .fa-heart--empty {
+  opacity: 1;
+  transition: opacity 400ms;
+}
+.cards__body__heart .fa-heart--empty:hover {
+  opacity: 0;
+  transition: opacity 400ms;
+}
 .cards__body__heart .fa-heart--full {
   background: linear-gradient(to top right, #FF79DA, #9356DC);
   background-clip: border-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  opacity: 0;
+  transition: opacity 400ms;
+}
+.cards__body__heart .fa-heart--full:hover {
+  opacity: 1;
+  transition: opacity 400ms;
 }
 
+/* Heart icon in menu pages */
+.menu__title__heart .fa-heart {
+  position: absolute;
+  right: 40px;
+  bottom: 35px;
+}
+.menu__title__heart .fa-heart--empty {
+  opacity: 1;
+  transition: opacity 400ms;
+}
+.menu__title__heart .fa-heart--empty:hover {
+  opacity: 0;
+  transition: opacity 400ms;
+}
+.menu__title__heart .fa-heart--full {
+  background: linear-gradient(to top right, #FF79DA, #9356DC);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0;
+  transition: opacity 400ms;
+}
+.menu__title__heart .fa-heart--full:hover {
+  opacity: 1;
+  transition: opacity 400ms;
+}
+
+/* Button order in menu pages */
 .order__button {
   font-family: "Roboto";
   color: white;
@@ -138,6 +194,7 @@
   border: none;
 }
 
+/* form for research location in index */
 .location {
   width: 100%;
   height: 50px;
@@ -160,6 +217,7 @@
   border: none;
 }
 
+/* Header in index page */
 .header__index {
   position: sticky;
   width: 100%;
@@ -169,6 +227,7 @@
   justify-content: center;
 }
 
+/* Header in menu pages */
 .header__menu {
   width: 100%;
   padding: 25px 0px 10px 0px;
@@ -185,7 +244,7 @@
 .fa-arrow-left {
   position: absolute;
   left: 20px;
-  top: 40px;
+  top: 25px;
 }
 
 footer {
@@ -214,12 +273,6 @@ footer ul li {
 }
 footer .footer__icon {
   margin-right: 10px;
-}
-footer .fa-sm {
-  line-height: normal;
-}
-footer .fa-2xs {
-  line-height: normal;
 }
 
 /* Explorer part */
@@ -285,6 +338,7 @@ footer .fa-2xs {
   justify-content: space-around;
 }
 
+/* Background image */
 .background__image img {
   width: 100%;
   height: 250px;
@@ -339,29 +393,6 @@ footer .fa-2xs {
   justify-content: space-between;
   align-items: center;
 }
-.menu__list__bloc {
-  width: 100%;
-  height: 55px;
-  padding: 5px;
-  font-family: "Roboto";
-  border-radius: 10px;
-  background-color: white;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-.menu__list__bloc h3 {
-  margin: 0px;
-  font-size: 16px;
-}
-.menu__list__bloc p {
-  margin: 0px;
-  font-size: 14px;
-}
-.menu__list__bloc span {
-  align-self: flex-end;
-}
 
 .order {
   width: 100%;
@@ -369,6 +400,48 @@ footer .fa-2xs {
   background-color: #f6f6f6;
   display: flex;
   justify-content: center;
+}
+
+.plates {
+  width: 100%;
+  height: 55px;
+  padding: 5px 0px 5px 5px;
+  font-family: "Roboto";
+  border-radius: 10px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+.plates__text {
+  width: 90%;
+}
+.plates__text h3 {
+  margin: 0px;
+  font-size: 16px;
+}
+.plates__text p {
+  margin: 0px;
+  font-size: 14px;
+}
+.plates__price {
+  width: 10%;
+  align-self: flex-end;
+}
+.plates__validation {
+  width: 0%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.plates:hover .plates__text {
+  width: 75%;
+}
+.plates:hover .plates__validation {
+  width: 21%;
+  height: 130%;
+  background-color: #99E2D0;
 }
 
 /*# sourceMappingURL=style.css.map */
