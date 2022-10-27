@@ -1,3 +1,5 @@
+/* Background image */
+
 .background__image {
 
     img {
@@ -55,19 +57,29 @@
     margin-top: 10px;
     height: 180px;
     @include CenterColumn;
+}
 
+.order {
+    width: 100%;
+    height: 130px;
+    background-color: $background-color-primary;
+    display: flex;
+    justify-content: center;
+}
 
-    &__bloc {
-        width: 100%;
-        height: 55px;
-        padding: 5px;
-        font-family: $font-text;
-        border-radius: 10px;
-        background-color: white;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: space-around;
+.plates {
+    width: 100%;
+    height: 55px;
+    padding: 5px 0px 5px 5px;
+    font-family: $font-text;
+    border-radius: 10px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+
+    &__text {
+        width: 90%;
 
         h3 {
             margin: 0px;
@@ -79,16 +91,33 @@
             font-size: 14px;
         }
 
-        span {
-            align-self: flex-end;
+    }
+
+    &__price {
+        width: 10%;
+        align-self: flex-end;
+    }
+
+    &__validation {
+        width: 0%;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &:hover & {
+        &__text {
+            width: 75%;
+        }
+
+        &__validation {
+            width: 21%;
+            height: 130%;
+            background-color: $color-tertiary;
+
         }
     }
 }
 
-.order {
-    width: 100%;
-    height: 130px;
-    background-color: $background-color-primary;
-    display: flex;
-    justify-content: center;
-}
+.fa-circle-check {}
