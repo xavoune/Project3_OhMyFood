@@ -415,6 +415,7 @@ footer .footer__icon {
 }
 .plates__text {
   width: 90%;
+  transition: width 1000ms;
 }
 .plates__text h3 {
   margin: 0px;
@@ -423,10 +424,13 @@ footer .footer__icon {
 .plates__text p {
   margin: 0px;
   font-size: 14px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .plates__price {
   width: 10%;
   align-self: flex-end;
+  transition: width 1000ms;
 }
 .plates__validation {
   width: 0%;
@@ -434,14 +438,35 @@ footer .footer__icon {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: width 1000ms;
+}
+.plates__validation .fa-circle-check {
+  transition: all 1000ms;
 }
 .plates:hover .plates__text {
-  width: 75%;
+  width: 70%;
+}
+.plates:hover .plates__text h3 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.plates:hover .plates__text p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.plates:hover .plates__price {
+  transition: width 1000ms;
 }
 .plates:hover .plates__validation {
-  width: 21%;
+  width: 20%;
   height: 130%;
   background-color: #99E2D0;
+  transition: width 1000ms;
+}
+.plates:hover .plates__validation .fa-circle-check {
+  transform: rotate(360deg);
 }
 
 /*# sourceMappingURL=style.css.map */
