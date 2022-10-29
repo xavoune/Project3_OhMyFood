@@ -275,6 +275,55 @@ footer .footer__icon {
   margin-right: 10px;
 }
 
+/* Loader */
+.loader {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fade 3s;
+  visibility: hidden;
+  z-index: 1;
+}
+.loader__spin {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  border: 20px solid white;
+  border-top: 20px solid #9356DC;
+  border-bottom: 20px solid #FF79DA;
+  border-radius: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: spin 2s linear;
+}
+.loader__text {
+  font-family: "Shrikhand";
+  font-size: 50px;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes fade {
+  0% {
+    opacity: 1;
+    visibility: visible;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
 /* Explorer part */
 .explorer {
   width: 100%;
