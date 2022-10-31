@@ -38,6 +38,10 @@
     padding: 0px 10px 40px 10px;
     background-color: $background-color-primary;
 
+    @include desktop-only {
+        padding: 0px 10px 10px 10px;
+    }
+
     h2 {
         margin: 0px;
         font-family: $font-text;
@@ -57,6 +61,12 @@
     margin-top: 10px;
     height: 180px;
     @include CenterColumn;
+
+    @include desktop-only {
+        height: 60px;
+        flex-direction: row;
+        justify-content: space-around;
+    }
 }
 
 .order {
@@ -65,6 +75,10 @@
     background-color: $background-color-primary;
     display: flex;
     justify-content: center;
+
+    @include desktop-only {
+        align-items: center;
+    }
 }
 
 .plates {
@@ -77,6 +91,10 @@
     display: flex;
     align-items: center;
     overflow: hidden;
+
+    @include desktop-only {
+        width: 30%;
+    }
 
     &__text {
         width: 90%;

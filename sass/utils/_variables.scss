@@ -11,3 +11,10 @@ $color-tertiary: #99E2D0;
 
 $background-color-primary: #f6f6f6;
 $background-color-secondary: #eaeaea;
+
+/* Breakpoint */
+
+$breakpoints: (
+    tablet: 768px,
+    desktop: 1024px
+);

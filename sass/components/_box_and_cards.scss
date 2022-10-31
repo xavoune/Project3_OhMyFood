@@ -10,6 +10,10 @@
     display: flex;
     align-items: center;
 
+    @include desktop-only {
+        width: 30%;
+    }
+
     p {
         font-weight: bold;
     }
@@ -48,6 +52,10 @@
     box-shadow: 2px 2px 10px $background-color-primary;
     border-radius: 15px;
     position: relative;
+
+    @include tablet-only {
+        width: 45%;
+    }
 
 
     a {
