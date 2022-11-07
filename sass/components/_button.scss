@@ -10,6 +10,10 @@
     background: linear-gradient(to bottom right, $color-secondary, $color-primary);
     border: none;
 
+    &:hover {
+        filter: brightness(1.1);
+    }
+
 }
 
 /* Heart icon in index page */
@@ -93,4 +97,8 @@
     box-shadow: 5px 5px 5px $background-color-secondary;
     background: linear-gradient(to bottom right, $color-secondary, $color-primary);
     border: none;
+
+    &:hover {
+        filter: brightness(1.1);
+    }
 }
