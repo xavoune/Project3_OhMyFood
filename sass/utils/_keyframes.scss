@@ -1,0 +1,40 @@
+ /* Animation menus */
+
+ @keyframes slidein {
+     0% {
+         transform: translateY(30px);
+         opacity: 0;
+     }
+
+     75% {
+         opacity: 0.5;
+     }
+
+     100% {
+         opacity: 1;
+     }
+ }
+
+ /*Animation loader */
+
+ @keyframes spin {
+     0% {
+         transform: rotate(0deg)
+     }
+
+     100% {
+         transform: rotate(360deg)
+     }
+ }
+
+ @keyframes fade {
+     0% {
+         opacity: 1;
+         visibility: visible;
+     }
+
+     100% {
+         opacity: 0;
+         visibility: hidden;
+     }
+ }

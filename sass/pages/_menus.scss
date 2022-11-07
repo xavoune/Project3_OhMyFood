@@ -17,6 +17,7 @@
 .menu__body {
     position: relative;
     padding-top: 30px;
+    background-color: $background-color-primary;
 }
 
 .menu__title {
@@ -32,6 +33,7 @@
 
 
     h1 {
+        width: 80%;
         margin: 0px;
         font-family: $font-title;
         font-size: 28px;
@@ -39,8 +41,14 @@
     }
 }
 
-.menu {
-    @include desktop-only {}
+.menu__container {
+
+    position: relative;
+    top: 20px;
+
+    @include desktop-only {
+        display: flex;
+    }
 }
 
 .menu__section {
@@ -49,6 +57,7 @@
 
     @include desktop-only {
         padding: 0px 10px 10px 10px;
+        width: calc(100%/$columns-menu);
     }
 
     h2 {
@@ -68,13 +77,11 @@
 
 .menu__list {
     margin-top: 10px;
-    height: 180px;
     @include CenterColumn;
 
     @include desktop-only {
-        height: 60px;
-        flex-direction: row;
-        justify-content: space-around;
+        display: flex;
+        flex-direction: column;
     }
 }
 
@@ -82,6 +89,7 @@
     width: 100%;
     height: 130px;
     background-color: $background-color-primary;
+    position: relative;
     display: flex;
     justify-content: center;
 
@@ -94,6 +102,7 @@
     width: 100%;
     height: 55px;
     padding: 5px 0px 5px 5px;
+    margin: 10px 0px;
     font-family: $font-text;
     border-radius: 10px;
     background-color: white;
@@ -102,31 +111,14 @@
     overflow: hidden;
     animation: slidein linear;
 
-    @for $index from 1 through 3 {
+    @for $index from 1 through 4 {
         &:nth-child(#{$index}) {
             //background: blue;
             animation-duration: 500ms * $index;
         }
     }
 
-    @keyframes slidein {
-        0% {
-            transform: translateY(30px);
-            opacity: 0;
-        }
 
-        75% {
-            opacity: 0.5;
-        }
-
-        100% {
-            opacity: 1;
-        }
-    }
-
-    @include desktop-only {
-        width: 30%;
-    }
 
     &__text {
         width: 90%;
@@ -143,6 +135,7 @@
             font-size: 14px;
             text-overflow: ellipsis;
             white-space: nowrap;
+
         }
 
     }
@@ -169,17 +162,20 @@
     &:hover & {
         &__text {
             width: 70%;
+            transition: width 1000ms;
 
             h3 {
                 overflow: hidden;
                 text-overflow: ellipsis;
                 white-space: nowrap;
+
             }
 
             p {
                 overflow: hidden;
                 text-overflow: ellipsis;
                 white-space: nowrap;
+
             }
         }
 
