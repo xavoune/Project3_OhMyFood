@@ -605,11 +605,12 @@ footer .footer__icon {
 }
 .plates__validation {
   width: 0%;
+  height: 130%;
   color: white;
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: width 1000ms;
+  transition: all 1000ms;
 }
 .plates__validation .fa-circle-check {
   transition: all 1000ms;
